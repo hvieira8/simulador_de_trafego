@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tráfego e Fluxo de Veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simulador de Tráfego e Fluxo de Veículos</h1>
+        
+        <form id="traffic-form">
+            <label for="traffic-density">Densidade do Tráfego (veículos por km):</label>
+            <input type="number" id="traffic-density" min="10" max="100" step="10" value="30" required>
+            
+            <label for="road-length">Comprimento da Estrada (km):</label>
+            <input type="number" id="road-length" min="1" max="10" step="1" value="5" required>
+            
+            <button type="submit">Simular Tráfego</button>
+        </form>
+
+        <div id="simulation-container">
+            <canvas id="traffic-canvas"></canvas>
+        </div>
+
+        <h2 id="simulation-result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
